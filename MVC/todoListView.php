@@ -75,15 +75,15 @@ while (	$rs=mysqli_fetch_assoc($result)) {
 		case 0:
 			if ($bossMode) {
 				echo "<a href='todoEditForm.php?id={$rs['id']}'>Edit</a>  ";	
-				echo "<a href='todoSet.php?act=cancel&id={$rs['id']}'>Cancel</a>  " ;
+				echo "<a href='todoSetControl.php?act=cancel&id={$rs['id']}'>Cancel</a>  " ;
 			} else {
 				echo "<a href='todoSetControl.php?act=finish&id={$rs['id']}'>Finish</a>  ";
 			}
 
 			break;
 		case 1:
-			echo "<a href='todoSet.php?act=reject&id={$rs['id']}'>Reject</a>  ";
-			echo "<a href='todoSet.php?act=close&id={$rs['id']}'>Close</a>  ";
+			echo "<a href='todoSetControl.php?act=reject&id={$rs['id']}'>Reject</a>  ";
+			echo "<a href='todoSetControl.php?act=close&id={$rs['id']}'>Close</a>  ";
 			break;
 		default:
 			break;

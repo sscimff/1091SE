@@ -1,5 +1,5 @@
 <?php
-require("dbconnect.php");
+require_once("dbconnect.php");
 
 function addJob($jobProfile){
 	//check the $jobProfile first
@@ -9,10 +9,9 @@ function addJob($jobProfile){
 }
 
 function cancelJob($jobID) {
-	//check the $jobID first
-	//1. delete the job with $jobID from DB
-	//2. update the job's status to canceled
-	
+	global $conn;
+	$sql = "update todo set status = 3 where id=$jobID and status <> 2;";
+	mysqli_query($conn,$sql);
 	//return T/F
 }
 
@@ -38,12 +37,16 @@ function setFinished($jobID) {
 	
 }
 
-function rejectJob(){
-	
+function rejectJob($jobID){
+	global $conn;
+	$sql = "update todo set status = 0 where id=$jobID and status = 1;";
+	mysqli_query($conn,$sql);
 }
 
-function setClosed() {
-	
+function setClosed($jobID) {
+	global $conn;
+	$sql = "update todo set status = 2 where id=$jobID and status = 1;";
+	mysqli_query($conn,$sql);
 }
 
 ?>
