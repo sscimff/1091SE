@@ -24,6 +24,7 @@ $result=mysqli_query($conn,$sql) or die("DB Error: Cannot retrieve message.");//
 <table width="200" border="1">
 <tr>
     <td>id</td>
+    <td>學生姓名: <input name="name" type="text" id="name" /> <td>
     <td>導師訪視說明</td>
     <td>導師簽章</td>
 </tr>
