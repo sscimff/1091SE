@@ -24,9 +24,9 @@ if (! $rs) {
 <h1>Teacher Task</h1>
 <form method="post" action="todoStudent.php">
 
-      導師訪視說明: <input name="title" type="text" id="title" style="width: 300px; height: 100px" /> <br>
+      導師訪視說明: <input name="title" type="text" id="title" /> <br>
 
-      導師簽章: <input name="msg" type="text" id="msg" style="35px" /> <br>
+      導師簽章: <input name="msg" type="text" id="msg" /> <br>
 	  
       <input type="submit" name="Submit" value="送出" />
       <br>

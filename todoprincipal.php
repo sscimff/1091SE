@@ -23,7 +23,11 @@ if (! $rs) {
 <body>
 <h1>Teacher Task</h1>
 <form method="post" action="todoStudent.php">
-      校長簽核: <input name="msg" type="text" id="msg" style="35px" /> <br>
+      校長簽核:<select>
+                <option>決行</option>
+                <option>否決</option>
+                </select>
+      <input name="msg" type="text" id="msg" /> <br>
 	  
       <input type="submit" name="Submit" value="送出" />
       <br>

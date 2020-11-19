@@ -24,9 +24,9 @@ if (! $rs) {
 <h1>Secretary Task</h1>
 <form method="post" action="todoStudent.php">
 
-      審核結果:准予補助 <input name="msg" type="text" id="msg" /> 元(若輸入0元則不予以補助)<br>
-      審查意見: <input name="msg" type="text" id="msg" /> <br>
-      秘書簽章: <input name="msg" type="text" id="msg" style="35px" /> <br>
+      秘書審核結果:准予補助 <input name="msg" type="text" id="msg" /> 元(若輸入0元則不予以補助)<br>
+      秘書審查意見: <input name="msg" type="text" id="msg" /> <br>
+      秘書簽章: <input name="msg" type="text" id="msg" /> <br>
 	  
       <input type="submit" name="Submit" value="送出" />
       <br>
