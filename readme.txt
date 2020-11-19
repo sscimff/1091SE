@@ -1,1 +1,23 @@
-the woerking version
+## 學生申請表的欄位
+- id
+  - 學號
+- name
+  - 姓名
+- father_name
+  - 父親名稱
+- mother_name
+  - 母親姓名
+- species
+  - 申請種類
+- t_text
+  - 導師訪視說明
+- t_sign
+  - 導師簽章
+- s_result
+  - 秘書審核結果
+- s_sug
+  - 秘書審查意見
+- s_sign
+  - 秘書簽章
+- p_sign
+  - 校長簽核
