@@ -21,20 +21,27 @@ $result=mysqli_query($conn,$sql) or die("DB Error: Cannot retrieve message.");//
 <p>Student List !! </p>
 <hr />
 <p></p>
-<table width="200" border="1">
+<table width="500" border="1">
 <tr>
     <td>id</td>
-    <td>學生姓名: <input name="name" type="text" id="name" /> <td>
     <td>導師訪視說明</td>
     <td>導師簽章</td>
+    <td>秘書審核結果</td>
+    <td>秘書審查意見</td>
+    <td>秘書簽章</td>
+    <td>校長簽核</td>
 </tr>
 <?php
 /*while (	$rs=mysqli_fetch_assoc($result)) {
 	echo "<tr><td>" . $rs['id'] . "</td>";//echo 大約為 print
-	echo "<td>" . $rs['title'] ."</td>";
-	echo "<td>" , $rs['content'], "</td>";
-}
-*/
+	echo "<td>" . $rs['t_text'] ."</td>";
+	echo "<td>" , $rs['t_sign'], "</td>";
+    echo "<td>" , $rs['s_result'], "</td>";
+    echo "<td>" , $rs['s_sug'], "</td>";
+    echo "<td>" , $rs['s_sign'], "</td>";
+    echo "<td>" , $rs['p_sign'], "</td>";
+}*/
+
 ?>
 </table>
 </body>
