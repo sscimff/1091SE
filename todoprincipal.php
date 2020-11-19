@@ -18,15 +18,12 @@ if (! $rs) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Secretary</title>
+<title>Teacher</title>
 </head>
 <body>
-<h1>Secretary Task</h1>
+<h1>Teacher Task</h1>
 <form method="post" action="todoStudent.php">
-
-      審核結果:准予補助 <input name="msg" type="text" id="msg" /> 元(若輸入0元則不予以補助)<br>
-      審查意見: <input name="msg" type="text" id="msg" /> <br>
-      秘書簽章: <input name="msg" type="text" id="msg" style="35px" /> <br>
+      校長簽核: <input name="msg" type="text" id="msg" style="35px" /> <br>
 	  
       <input type="submit" name="Submit" value="送出" />
       <br>
